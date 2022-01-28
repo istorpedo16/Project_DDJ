@@ -13,7 +13,7 @@ public class ToyKill : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(happenedOnce){
             if(other.gameObject.CompareTag("DangerousObject")){
-            Debug.Log("OH SHIT!");
+            //Debug.Log("OH SHIT!");
             changeToGhost.Invoke();
             happenedOnce=false;
         }

@@ -11,6 +11,9 @@ TagManager:
   - ground
   - Toy
   - DangerousObject
+  - YellowBox
+  - PinkBox
+  - BlueBox
   layers:
   - Default
   - TransparentFX

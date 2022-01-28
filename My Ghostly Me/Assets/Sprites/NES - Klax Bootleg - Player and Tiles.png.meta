@@ -112,7 +112,7 @@ TextureImporter:
         width: 15
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 15, w: 0}
       outline: []
       physicsShape: []
@@ -133,7 +133,7 @@ TextureImporter:
         width: 16
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,6 +141,69 @@ TextureImporter:
       bones: []
       spriteID: 66f34b474f7048949af766dd22230bec
       internalID: 182458077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Klax Bootleg - Player and Tiles_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 17
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3483aa652624e6e8c03a480e85e285
+      internalID: 1353744042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Klax Bootleg - Player and Tiles_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 81
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4829f155c6be54a4c99552d7467e118a
+      internalID: -641366416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Klax Bootleg - Player and Tiles_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 209
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f8eecef08294257905b39c7d1fc7c1
+      internalID: -20624724
       vertices: []
       indices: 
       edges: []
@@ -156,7 +219,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      NES - Klax Bootleg - Player and Tiles_4: -20624724
+      NES - Klax Bootleg - Player and Tiles_2: 1353744042
       NES - Klax Bootleg - Player and Tiles_1: 182458077
+      NES - Klax Bootleg - Player and Tiles_3: -641366416
       NES - Klax Bootleg - Player and Tiles_0: -545306609
   spritePackingTag: 
   pSDRemoveMatte: 0
