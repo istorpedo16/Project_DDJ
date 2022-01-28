@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PortaAbre : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PortaAbre : MonoBehaviour
     Collider2D boxRosa;
     public bool isInRange;
     public Animator door; //substituir pela porta
+
+    public UnityEvent ghostTransform;
 
     
 
@@ -33,6 +36,7 @@ public class PortaAbre : MonoBehaviour
                 if(pAzul.IsTouching(boxAzul) && pAmarelo.IsTouching(boxAmarela) && pRosa.IsTouching(boxRosa)){
                     //Debug.Log("Sim, tens as caixas todas;");
                     door.enabled = true;
+                    ghostTransform.Invoke();
                 }
             }
         }
