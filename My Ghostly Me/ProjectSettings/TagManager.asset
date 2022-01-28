@@ -11,8 +11,8 @@ TagManager:
   - ground
   - Toy
   - DangerousObject
-  - YellowBox
   - PinkBox
+  - YellowBox
   - BlueBox
   layers:
   - Default

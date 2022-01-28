@@ -4,14 +4,36 @@ using UnityEngine;
 
 public class BallCutter : MonoBehaviour
 {
-   public void OnTriggerEnter2D (Collider2D collider){
-       GameObject objectToDestroy = GameObject.FindGameObjectWithTag("LinkBall");
+    public bool isInRange;
 
-        if(collider.GetComponent<CharacterController2D>() != null){
-            //if(Input.GetKeyDown(KeyCode.E)){
-                Destroy (objectToDestroy);
-                
-            //}
+    void Update(){
+        GameObject objectToDestroy = GameObject.FindGameObjectWithTag("LinkBall");
+
+        if(isInRange){
+            if(Input.GetKeyDown(KeyCode.C)){
+                objectToDestroy.SetActive(false);
+                //Destroy (objectToDestroy);
+            }
         }
-   }
+
+        
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if(collision.gameObject.CompareTag("Toy")){
+            isInRange = true;
+            /*Debug.Log("Ghost in range");
+            textContent.SetText(interactKey.ToString(), true);
+            textContent.enabled = true;*/
+        }
+    }
+
+   private void OnTriggerExit2D(Collider2D collision) {
+        if(collision.gameObject.CompareTag("Toy")){
+            isInRange = false;
+            //Debug.Log("Ghost is NOT range");
+            //textContent.enabled = false;
+        }
+    }
 }

@@ -15,11 +15,14 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     PolygonCollider2D coll;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<PolygonCollider2D>();
     }
+
+    
 
     void FixedUpdate()
     {

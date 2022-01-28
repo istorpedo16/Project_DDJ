@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class ToyMovement : MonoBehaviour
@@ -11,9 +12,18 @@ public class ToyMovement : MonoBehaviour
     bool jump = false;
     float moveX = 0f;
 
+    private Vector3 respawnPoint;
+
+    void Start()
+    {
+        
+        respawnPoint = transform.position;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        GameObject objectToDestroy = GameObject.FindGameObjectWithTag("LinkBall");
         moveX = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         animator.SetFloat("Speed", Mathf.Abs(moveX));
@@ -21,6 +31,11 @@ public class ToyMovement : MonoBehaviour
             animator.SetBool("IsJumping", true);
             jump = true;
         }
+
+        if(Input.GetKeyDown(KeyCode.R)){
+        
+                SceneManager.LoadScene("Game");
+            }
     }
 
     public void onLanding(){

@@ -7,7 +7,9 @@ public class DeleteCaixas : MonoBehaviour
     public GameObject plantaforma;
     public bool isInRange;
 
-    
+    public GameObject nextPlat;
+    public GameObject wall1;
+    public GameObject wall2;
 
     // Update is called once per frame
     void Update()
@@ -34,7 +36,7 @@ public class DeleteCaixas : MonoBehaviour
         }
     }
 
-     private void OnTriggerExit2D(Collider2D collision) {
+    private void OnTriggerExit2D(Collider2D collision) {
         if(collision.gameObject.CompareTag("Toy")){
             isInRange = false;
             //Debug.Log("Ghost is NOT range");
