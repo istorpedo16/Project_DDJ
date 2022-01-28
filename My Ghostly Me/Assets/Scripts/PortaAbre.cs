@@ -12,7 +12,7 @@ public class PortaAbre : MonoBehaviour
     public Collider2D boxAmarela;
     public Collider2D boxRosa;
 
-    public GameObject teste; //substituir pela porta
+    public Animator door; //substituir pela porta
 
     public bool isInRange;
 
@@ -27,7 +27,7 @@ public class PortaAbre : MonoBehaviour
     {
         if(pAzul.IsTouching(boxAzul) && pAmarelo.IsTouching(boxAmarela) && pRosa.IsTouching(boxRosa)){
             if(Input.GetKeyDown(KeyCode.E)){
-                teste.SetActive(false);
+               door.enabled = true;
             }
         }
         

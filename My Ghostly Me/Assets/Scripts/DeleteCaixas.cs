@@ -7,6 +7,10 @@ public class DeleteCaixas : MonoBehaviour
     public GameObject plantaforma;
     public bool isInRange;
 
+     public GameObject nextPlat;
+    public GameObject wall1;
+    public GameObject wall2;
+
     // Update is called once per frame
     void Update()
     {
@@ -15,6 +19,9 @@ public class DeleteCaixas : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E)){
                 
                 plantaforma.SetActive(false);
+                nextPlat.active=true;
+                wall1.active=true;
+                wall2.active=true;
             }
             
 
